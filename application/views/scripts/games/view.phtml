@@ -4,3 +4,15 @@
 	<p>View script for controller <b>Games</b> and script/action name <b>view</b></p>
 
 </div>
+<div id="another-view">
+<ul id="hottest">
+<?= $this->partialLoop('_hottestgame.phtml', 
+		array(
+			array('asin' => 'B000TG530M', 'title' => 'Call of Duty 4: Modern Warfare'),
+			array('asin' => 'B000FRU1UM', 'title' => 'Grand Theft Auto IV'),
+			array('asin' => 'B000FRU0NU', 'title' => 'Halo 3')
+			)
+		);
+?>
+</ul>
+</div>
